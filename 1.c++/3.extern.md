@@ -1,0 +1,5 @@
+注意点：extern与const
+
+https://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777431.html
+
+https://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html
