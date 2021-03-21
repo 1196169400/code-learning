@@ -23,8 +23,9 @@ public:
     //static pointer allocate();
     T* allocate(size_type n = 1);
 
+    //size_type不能有默认参数
     void deallocate(pointer p);
-    void deallocate(pointer p, size_type n = 1);
+    void deallocate(pointer p, size_type n);
     
     void construct(pointer p);
     void construct(pointer p, const_reference value);
