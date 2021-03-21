@@ -36,7 +36,7 @@ void destroy_one(T* ty, std::false_type)
 template<typename T>
 void destroy(T* ty)
 {
-    destroy_one(ty, std::is_trivially_destructible<T>::value);
+    destroy_one(ty, std::is_trivially_destructible<T>{});
 }
 
 template<typename T>
