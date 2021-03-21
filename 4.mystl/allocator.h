@@ -9,6 +9,7 @@ namespace mystl
 template<typename T>
 class allocator
 {
+public:
     typedef T           value_type;
     typedef T*          pointer;
     typedef const T*    const_pointer;
@@ -16,7 +17,7 @@ class allocator
     typedef const T&    const_reference;
     typedef std::size_t size_type;
 
-
+public:
     //static pointer allocate();
     static T* allocate(size_type n = 1);
 
