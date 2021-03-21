@@ -7,6 +7,7 @@
 int main()
 {
     mystl::allocator<int> alloc;
+    /*
     auto const p = alloc.allocate(2); 
     auto q = p;
     alloc.construct(q);
@@ -15,5 +16,6 @@ int main()
         alloc.destroy(q);
     }while(q-- != p);
     alloc.deallocate(p, 2);
+    */
     return 0;
 }
