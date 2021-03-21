@@ -6,7 +6,7 @@ test:test_allocator.o allocator.o
 test_allocator.o:test_allocator.cpp allocator.cpp allcator.h
 	g++ -c test_allocator.cpp allocator.cpp -o test_allocator
 
-allocator.o:allocator.h allocator.h
+allocator.o:allocator.h construct.h
 
 .PHONY:clean
 
