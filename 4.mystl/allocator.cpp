@@ -25,6 +25,7 @@ T* allocator<T>::allocate(size_type n)
     return static_cast<pointer>(::operator new(sizeof(T) * n));
 }
 
+//delete比较智能，不需要for循环
 template<typename T>
 void allocator<T>::deallocate(pointer p, size_type /*size不用*/)
 {
