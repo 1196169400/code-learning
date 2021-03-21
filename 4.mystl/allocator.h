@@ -28,8 +28,8 @@ public:
     static void construct(pointer p, const_reference value);
     //static void construct(pointer p, right_reference value);
 
-    static void destory(pointer p);
-    static void destory(pointer p1, pointer p2);
+    static void destroy(pointer p);
+    static void destroy(pointer p1, pointer p2);
 };
 
 }

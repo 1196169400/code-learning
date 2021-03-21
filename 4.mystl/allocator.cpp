@@ -55,13 +55,13 @@ void allocator<T>::construct(pointer p, const_reference value)
 template<typename T>
 void allocator<T>::destroy(pointer p)
 {
-    //mystl::destroy(p);
+    mystl::destroy(p);
 }
 
 template<typename T>
 void allocator<T>::destroy(pointer p1, pointer p2)
 {
-    //mystl::destroy(p1, p2);
+    mystl::destroy(p1, p2);
 }
 
 }
