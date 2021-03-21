@@ -21,13 +21,13 @@ public:
     allocator()=default;
     ~allocator()=default;
     //static pointer allocate();
-    static T* allocate(size_type n = 1);
+    T* allocate(size_type n = 1);
 
-    static void deallocate(pointer p);
-    static void deallocate(pointer p, size_type n = 1);
+    void deallocate(pointer p);
+    void deallocate(pointer p, size_type n = 1);
     
-    static void construct(pointer p);
-    static void construct(pointer p, const_reference value);
+    void construct(pointer p);
+    void construct(pointer p, const_reference value);
     //static void construct(pointer p, right_reference value);
 
     static void destroy(pointer p);
