@@ -38,7 +38,7 @@ void allocator<T>::deallocate(pointer p1, size_type n)
 {
     pointer tmp = p1;
     while (n--) {
-        std::cout << "allocate::" << reinterpret_cast<int>(tmp) << std::endl;
+        std::cout << "allocate::" << reinterpret_cast<long>(tmp) << std::endl;
         deallocate(tmp);
         tmp++;
     }
