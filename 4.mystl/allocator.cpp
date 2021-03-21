@@ -20,6 +20,7 @@ T* allocator<T>::allocate(size_type n)
 {
     if (n == 0)
         return nullptr;
+    std::cout << "allocate::"sizeof(T)*n << std::endl;
     return static_cast<pointer>(::operator new(sizeof(T) * n));
 }
 
