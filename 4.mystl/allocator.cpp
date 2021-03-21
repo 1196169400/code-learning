@@ -75,9 +75,11 @@ int main()
     auto q = p;
     alloc.construct(q);
     alloc.construct(q++,1);
+    std::cout << "1" << std::endl;
     do {
         alloc.destroy(q);
     }while(q-- != p);
+    std::cout << "2" <<std::endl;
     alloc.deallocate(p, 2);
     std::cout << "success" << std::endl;
     return 0;
