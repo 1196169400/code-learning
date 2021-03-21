@@ -9,8 +9,10 @@ pointer allocator<T>::allocate()
 }
 */
 
+
+//返回值不能写pointer，不在类作用域内
 template<typename T>
-pointer allocator<T>::allocate(size_type n)
+T* allocator<T>::allocate(size_type n)
 {
     if (n == 0)
         return nullptr;
@@ -47,7 +49,7 @@ void allocator<T>::construct(pointer p, const reference value)
     mystl::construct(p, value);
 }
 
-template<typrname T>
+template<typename T>
 void allocator<T>:destroy(pointer p)
 {
     mystl::destroy(p);
