@@ -1,3 +1,5 @@
+VPATH = ../:../../
+
 test:test_allocator.o allocator.o
 	g++ -o test test_allocator.o allocator.o
 
