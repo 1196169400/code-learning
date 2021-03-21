@@ -14,4 +14,5 @@ int main()
         alloc.destroy(q);
     }while(q-- != p);
     alloc.deallocate(p, 2);
+    return 0;
 }

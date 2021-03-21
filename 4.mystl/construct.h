@@ -2,6 +2,7 @@
 #define MYSTL_CONSTRUCT_H_
 
 #include<new>
+#include<iostream>
 
 namespace mystl
 {
