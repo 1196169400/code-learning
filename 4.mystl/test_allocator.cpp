@@ -4,6 +4,7 @@
 #include<string>
 //using namespace std;
 
+/*
 int main()
 {
     mystl::allocator<int> alloc;
@@ -17,6 +18,7 @@ int main()
         alloc.destroy(q);
     }while(q-- != p);
     alloc.deallocate(p, 2);
-    */
+    
     return 0;
 }
+*/
