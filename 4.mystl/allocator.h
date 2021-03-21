@@ -20,7 +20,7 @@ class allocator
     //static pointer allocate();
     static T* allocate(size_type n = 1);
 
-    //static void deallocate(pointer p);
+    static void deallocate(pointer p);
     static void deallocate(pointer p, size_type n = 1);
     
     static void construct(pointer p);
