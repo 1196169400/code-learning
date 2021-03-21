@@ -72,7 +72,7 @@ int main()
 {
     mystl::allocator<int> alloc;
     size_t a{2};
-    int* const p = alloc.allocate(a); 
+    int* p = alloc.allocate(a); 
     std::cout << static_cast<int>(p) << std::endl;
     int* q = p;
     alloc.construct(q,10);
