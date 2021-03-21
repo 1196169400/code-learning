@@ -38,6 +38,7 @@ void allocator<T>::deallocate(pointer p1, size_type n)
 {
     pointer tmp = p1;
     while (n--) {
+        std::cout << "allocate::" << reinterpret_cast<int>(tmp) << std::endl;
         deallocate(tmp);
         tmp++;
     }
@@ -74,7 +75,7 @@ int main()
     mystl::allocator<std::string> alloc;
     size_t a{2};
     auto const p = alloc.allocate(a); 
-    //std::cout << reinterpret_cast<long>(p) << std::endl;
+    std::cout << reinterpret_cast<long>(p) << std::endl;
     auto q = p;
     alloc.construct(q++,"hello");
     alloc.construct(q++,"world");
