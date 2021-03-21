@@ -76,7 +76,7 @@ int main()
     auto const p = alloc.allocate(a); 
     //std::cout << reinterpret_cast<long>(p) << std::endl;
     auto q = p;
-    alloc.construct(q,"hello");
+    alloc.construct(q++,"hello");
     alloc.construct(q++,"world");
     //std::cout << reinterpret_cast<long>(p) <<std::endl;
     std::cout << p[0] <<std::endl;
