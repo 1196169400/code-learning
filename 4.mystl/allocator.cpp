@@ -34,10 +34,10 @@ void allocator<T>::deallocate(pointer p)
 template<typename T>
 void allocator<T>::deallocate(pointer p1, size_type n)
 {
-    //pointer tmp = p1;
+    pointer tmp = p1;
     while (n--) {
-        deallocate(p1++);
-        //tmp++;
+        deallocate(tmp);
+        tmp++;
     }
 }
 
