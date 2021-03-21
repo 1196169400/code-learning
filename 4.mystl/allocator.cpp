@@ -26,13 +26,14 @@ T* allocator<T>::allocate(size_type n)
 }
 
 template<typename T>
-void allocator<T>::deallocate(pointer p)
+void allocator<T>::deallocate(pointer p, size_type /*size不用*/)
 {
     if (p != nullptr) {
         ::operator delete(p);
     }
 }
 
+/*
 template<typename T>
 void allocator<T>::deallocate(pointer p1, size_type n)
 {
@@ -43,6 +44,7 @@ void allocator<T>::deallocate(pointer p1, size_type n)
         tmp++;
     }
 }
+*/
 
 template<typename T>
 void allocator<T>::construct(pointer p)
