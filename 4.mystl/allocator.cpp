@@ -1,5 +1,6 @@
 #include "allocator.h"
 #include <iostream>
+#include <string>
 
 namespace mystl
 {
@@ -70,21 +71,21 @@ void allocator<T>::destroy(pointer p1, pointer p2)
 
 int main()
 {
-    mystl::allocator<int> alloc;
+    mystl::allocator<std::string> alloc;
     size_t a{2};
-    int* p = alloc.allocate(a); 
-    std::cout << reinterpret_cast<long>(p) << std::endl;
-    int* q = p;
-    alloc.construct(q,10);
-    alloc.construct(q++,30);
-    std::cout << reinterpret_cast<long>(p) <<std::endl;
+    auto const p = alloc.allocate(a); 
+    //std::cout << reinterpret_cast<long>(p) << std::endl;
+    auto q = p;
+    alloc.construct(q,"hello");
+    alloc.construct(q++,"world");
+    //std::cout << reinterpret_cast<long>(p) <<std::endl;
     std::cout << p[0] <<std::endl;
     std::cout << p[1] << std::endl;
-    std::cout << "1" << std::endl;
+    //std::cout << "1" << std::endl;
     do {
         alloc.destroy(q);
     }while(q-- != p);
-    std::cout << "2" <<std::endl;
+    //std::cout << "2" <<std::endl;
     alloc.deallocate(p, 2);
     std::cout << "success" << std::endl;
     return 0;
