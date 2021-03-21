@@ -82,9 +82,9 @@ int main()
     std::cout << p[0] <<std::endl;
     std::cout << p[1] << std::endl;
     //std::cout << "1" << std::endl;
-    do {
+    while(q != p) {
         alloc.destroy(--q);
-    }while(q != p);
+    }
     //std::cout << "2" <<std::endl;
     alloc.deallocate(p, 2);
     std::cout << "success" << std::endl;
