@@ -7,7 +7,8 @@
 int main()
 {
     mystl::allocator<int> alloc;
-    auto const p = alloc.allocate(2); 
+    int a{2};
+    auto const p = alloc.allocate(a); 
     /*
     auto q = p;
     alloc.construct(q);
