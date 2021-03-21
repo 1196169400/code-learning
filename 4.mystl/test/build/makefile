@@ -4,7 +4,7 @@ test:test_allocator.o allocator.o
 	g++ -o test test_allocator.o allocator.o
 
 test_allocator.o:test_allocator.cpp allocator.cpp allocator.h
-	g++ -c test_allocator.cpp allocator.cpp -o test_allocator
+	#g++ -c test_allocator.cpp allocator.cpp -o test_allocator.o
 
 allocator.o:allocator.h construct.h
 
