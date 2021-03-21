@@ -1,4 +1,7 @@
-VPATH = ../:../../
+vpath test_allocator.cpp ../
+vpath allocator.cpp ../../
+vpath allocator.h ../../
+vpath construct.h ../../ 
 
 test:test_allocator.o allocator.o
 	g++ -o test test_allocator.o allocator.o
