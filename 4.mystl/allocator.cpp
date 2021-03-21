@@ -1,5 +1,8 @@
 #include "allocator.h"
 
+namespace mystl
+{
+
 /*
 template<T>
 pointer allocator<T>::allocate()
@@ -59,4 +62,6 @@ template<typename T>
 void allocator<T>::destroy(pointer p1, pointer p2)
 {
     mystl::destroy(p1, p2);
+}
+
 }
