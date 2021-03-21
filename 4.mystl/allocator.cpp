@@ -74,8 +74,10 @@ int main()
     size_t a{2};
     auto const p = alloc.allocate(a); 
     auto q = p;
-    alloc.construct(q);
-    alloc.construct(q++,1);
+    alloc.construct(q,10);
+    alloc.construct(q++,30);
+    std::cout << p[0] <<std::endl;
+    std::cout << p[1] << std::endl;
     std::cout << "1" << std::endl;
     do {
         alloc.destroy(q);
