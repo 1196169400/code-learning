@@ -18,6 +18,7 @@ template<typename T, typename type>
 void construct(T* ty, const type& value)
 {
     ::new((void*)ty) T(value);
+    std::cout<< "construct" << value<<std::endl;
 }
 
 template<typename T>
