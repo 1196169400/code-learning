@@ -2,15 +2,15 @@
 
 #include<iostream>
 #include<string>
-using namespace std;
+//using namespace std;
 
 int main()
 {
-    mystl::allocator<string> alloc;
+    mystl::allocator<int> alloc;
     auto const p = alloc.allocate(2); 
     auto q = p;
     alloc.construct(q);
-    alloc.construct(q++,"hi");
+    alloc.construct(q++,1);
     do {
         alloc.destroy(q);
     }while(q-- != p);
