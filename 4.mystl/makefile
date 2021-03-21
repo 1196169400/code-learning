@@ -1,4 +1,4 @@
-vpath test_allocator.cpp ../
+#vpath test_allocator.cpp ../
 #vpath allocator.cpp ../../.
 #vpath allocator.h ../../.
 #vpath construct.h ../../.
