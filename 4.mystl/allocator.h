@@ -19,7 +19,7 @@ public:
 
 public:
     allocator()=default;
-    ~allocator()=delete;
+    ~allocator()=default;
     //static pointer allocate();
     static T* allocate(size_type n = 1);
 
