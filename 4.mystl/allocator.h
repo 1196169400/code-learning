@@ -18,10 +18,10 @@ class allocator
 
 
     //static pointer allocate();
-    static pointer allocate(size_type n == 1);
+    static pointer allocate(size_type n = 1);
 
     //static void deallocate(pointer p);
-    static void deallocate(pointer p, size_type n == 1);
+    static void deallocate(pointer p, size_type n = 1);
     
     static void construct(pointer p);
     static void construct(pointer p, const_reference value);
@@ -29,7 +29,7 @@ class allocator
 
     static void destory(pointer p);
     static void destory(pointer p1, pointer p2);
-}
+};
 
 }
 
