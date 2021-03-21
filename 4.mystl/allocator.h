@@ -6,7 +6,7 @@
 namespace mystl
 {
 
-template<T>
+template<typename T>
 class allocator
 {
     typedef T           value_type;
