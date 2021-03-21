@@ -2,10 +2,11 @@
 
 #include<iostream>
 #include<string>
+using namespace std;
 
 int main()
 {
-    mystl::allocator<std::string> alloc;
+    mystl::allocator<string> alloc;
     auto const p = alloc.allocate(2); 
     auto q = p;
     alloc.construct(q);
