@@ -72,8 +72,8 @@ int main()
 {
     mystl::allocator<int> alloc;
     size_t a{2};
-    auto const p = alloc.allocate(a); 
-    auto q = p;
+    int* const p = alloc.allocate(a); 
+    int* q = p;
     alloc.construct(q,10);
     alloc.construct(q++,30);
     std::cout << p[0] <<std::endl;
