@@ -73,11 +73,11 @@ int main()
     mystl::allocator<int> alloc;
     size_t a{2};
     int* p = alloc.allocate(a); 
-    std::cout << reinterpret_cast<int>(p) << std::endl;
+    std::cout << reinterpret_cast<long>(p) << std::endl;
     int* q = p;
     alloc.construct(q,10);
     alloc.construct(q++,30);
-    std::cout << reinterpret_cast<int>(p) <<std::endl;
+    std::cout << reinterpret_cast<long>(p) <<std::endl;
     std::cout << p[0] <<std::endl;
     std::cout << p[1] << std::endl;
     std::cout << "1" << std::endl;
