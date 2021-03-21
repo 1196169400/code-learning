@@ -36,7 +36,7 @@ void allocator<T>::deallocate(pointer p1, size_type n)
 {
     pointer tmp = p1;
     while (n--) {
-        deallocate(tmp);
+        mystl::deallocate(tmp);
         tmp++;
     }
 }
