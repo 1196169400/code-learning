@@ -1,4 +1,5 @@
 #include "allocator.h"
+#include <iostream>
 
 namespace mystl
 {
@@ -71,7 +72,6 @@ int main()
     mystl::allocator<int> alloc;
     size_t a{2};
     auto const p = alloc.allocate(a); 
-    /*
     auto q = p;
     alloc.construct(q);
     alloc.construct(q++,1);
@@ -79,6 +79,6 @@ int main()
         alloc.destroy(q);
     }while(q-- != p);
     alloc.deallocate(p, 2);
-    */
+    std::cout << "success" << std::endl;
     return 0;
 }
