@@ -18,6 +18,8 @@ public:
     typedef std::size_t size_type;
 
 public:
+    allocator()=default;
+    ~allocator()=delete;
     //static pointer allocate();
     static T* allocate(size_type n = 1);
 
