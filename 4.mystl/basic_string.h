@@ -1,4 +1,4 @@
-
+#include<new>
 
 namespace mystl
 {
@@ -69,7 +69,27 @@ struct char_traits
     }
 }
 
-template<typename >
+template<typename CharType, typename CharTrait = char_traits<CharType>>
+class basic_string
+{
+    typedef CharTrait                               trait_type;
+    typedef CharTrait                               char_traits;
+
+    typedef std::allocator<CharType>                allocator_type;
+    typedef std::allocator<CharType>                data_allocator;
+
+    typedef typename std::allocator<CharType>::value_type     value_type;
+
+    typedef 
+    //typedef std::allocator<CharType>::
+
+public:
+    static const size_t npos = static_cast<size_t>(-1);
+
+private:
+    iterator buffer_;
+
+}
 
 
 
