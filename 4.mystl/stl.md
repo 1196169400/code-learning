@@ -82,6 +82,12 @@ https://ppipp.blog.csdn.net/article/details/84644069?utm_medium=distribute.pc_re
 
 https://www.cnblogs.com/WindSun/p/11444429.html
 
+https://stackoverflow.com/questions/20895648/difference-in-make-shared-and-normal-shared-ptr-in-c
+
+https://liam.page/2018/01/13/smart-pointer/
+
+https://zhuanlan.zhihu.com/p/64543967
+
 
 
 constexpr
@@ -101,3 +107,9 @@ https://www.cnblogs.com/fushi/p/7792257.html
 mem_fn和bind
 
 https://blog.csdn.net/elloop/article/details/50375820
+
+
+
+代理类
+
+https://liam.page/2017/11/26/surrogate-in-Cpp/
